@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!--My Own CSS-->
+    <link rel="stylesheet" type="text/css" href="css/flipcard.css">
+    <link rel="stylesheet" type="text/css" href="css/scrolltoup.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <!-- Font Awesome Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Google Font Stylesheet-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&amp;display=swap" rel="stylesheet"> <!--Bungee Shade Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&amp;display=swap" rel="stylesheet"> <!--Bree Serif Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;display=swap" rel="stylesheet"><!--Abril Fatface Font-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&amp;display=swap" rel="stylesheet"> <!--Dancing Script Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&amp;display=swap" rel="stylesheet">
+
+    <style>
+    * {
+      box-sizing:border-box;
+    }
+    
+    html, body {
+        background-color: #e6e6e6;
+    }
+    
+    /* Hover : mouse over word HELLO */
+    c1:hover {
+        color: hotpink;
+    }
+    
+    c2:hover {
+        color: rgb(105, 145, 255);
+    }
+    
+    c3:hover {
+        color:  rgb(105, 255, 155);
+    }
+    
+    c4:hover {
+        color: rgb(240, 255, 105);
+    }
+    
+    c5:hover {
+        color: rgb(255, 105, 105);
+    }
+    
+    c6:hover {
+        color: rgb(213, 105, 255);
+    }
+    /* End of hover mouse */
+    
+    button:hover {
+    outline: none;
+    box-shadow: 0 0 0 3px lightskyblue;
+    }
+    
+    .my-first-font {
+        font-family: 'Bungee Shade', cursive;
+        font-size: 100px;
+    }
+    
+    .my-second-font {
+        font-family: 'Bree Serif', serif;
+    }
+    
+    .my-third-font {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+    
+    #des.my-third-font { 
+        letter-spacing: 5px;
+    }
+    
+    .my-fourth-font {
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    .my-fifth-font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    }
+    
+    .sector {
+        margin-top: 100px;
+        margin-bottom: 350px;
+        padding-top: 50px;
+    }
+    
+    .header {
+        margin-top: 70px;
+    }
+    
+    .navbar-fixed-left {
+        width: 55px;
+        position: fixed;
+        border-radius: 0;
+        height: 100%;
+    }
+    
+    .nav-item {
+        margin-top: 15px;
+    }
+    
+    .nav-item a {
+        color: #273746;
+        }
+    
+    .nav-item a:hover {
+        color: #797979;
+          }
+    
+    .footer {
+        position: fixed;
+        text-align: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50px;
+            }
+    
+    .footer a {
+        color: #273746;
+        }
+    
+    /*--Zoom Icon in Menu*/
+    .zoom:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5); 
+    }
+    
+    /*Portfolio*/
+    
+        /* The grid: Four equal columns that floats next to each other */
+        #port1.col {
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+      
+      /* Style the images inside the grid */
+      #port1.col img {
+        opacity: 0.8;
+        cursor: pointer;
+        width: 300px;
+        height: 200px;
+      }
+      
+      #port1.col img:hover {
+        opacity: 1;
+      }
+    
+         /* The grid: Four equal columns that floats next to each other */
+         #port2.col {
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+      
+      /* Style the images inside the grid */
+      #port2.col img {
+        opacity: 0.8;
+        cursor: pointer;
+        width: 300px;
+        height: 200px;
+      }
+      
+      #port2.col img:hover {
+        opacity: 1;
+      }
+    
+         /* The grid: Four equal columns that floats next to each other */
+         #port3.col {
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+      
+      /* Style the images inside the grid */
+      #port3.col img {
+        opacity: 0.8;
+        cursor: pointer;
+        width: 300px;
+        height: 200px;
+      }
+      
+      #port3.col img:hover {
+        opacity: 1;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .containerTab {
+        padding: 20px;
+        color: rgb(0, 0, 0);
+      }
+    
+    
+      /* Closable button inside the image */
+      .closebtn {
+        float: right;
+        color: rgb(0, 0, 0);
+        font-size: 35px;
+        cursor: pointer;
+      }
+    
+      /*slider*/
+    
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+          }
+
+    .carousel-control-next-icon:after
+    {
+      content: '>';
+      font-size: 55px;
+      color: rgb(27, 27, 27);
+    }
+    
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      color:  rgb(27, 27, 27);
+    }
+    
+    /* unvisited link */
+    a:link {
+        color: rgb(39, 39, 39);
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: rgb(37, 177, 196);
+      }
+      
+      /* selected link */
+      a:active {
+        color: rgb(255, 103, 136);}
+    
+    /*Box*/
+    .box {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+        background-color: rgb(26, 74, 129);
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+    
+      .box p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+      .box::after {
+        content: "";
+        border-radius: 5px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      
+      .box:hover {
+        -webkit-transform: scale(1.25, 1.25);
+        transform: scale(1.25, 1.25);
+      }
+      
+      .box:hover::after {
+          opacity: 1;
+      }
+    
+      /*Hide click here*/
+      .hide {
+        display: none;
+      }
+    
+      .myHide:hover + .hide {
+        display: block;
+        color: rgb(255, 255, 255);
+        position: fixed;
+        top: 80%;
+        left: 40%;
+      }
+    </style>
+
+    <title>IA</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-left navbar-light" style="background-color: #e6e6e6;">    
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#HomeSection"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#PortfolioSection"><i class="fa fa-list-ul fa-lg" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#SkillSection"><i class="fa fa-trophy fa-lg" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#ContactSection"><i class="fa fa-address-book fa-lg" aria-hidden="true"></i></a>
+            </li>
+        </ul>      
+    </nav>
+   
+    <!--Home Section-->
+    <div class="container" id="HomeSection">
+        <div class="row">
+            <div class="col-lg-12">
+              <div class="header">
+                <h1 class="my-first-font"><c1>I</c1><c2>M</c2><c3>R</c3><c4>A</c4><c5>N</c5> <c6>A</c6><c1>D</c1><c2>I</c2><c3>B</c3></h1>
+                <div class="my-third-font" id="des">
+                   <p id="text"> Web Developer || IT Engineer</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-4 text-center mt-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/avatar.jpg" class="rounded" alt="avatar" style="width: 300px;height: 400px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="img/avatar.jpg" class="rounded" alt="avatar" style="width: 300px;height: 400px;">
+                  </div>
+                </div>
+              </div>
+                <br> <br>
+              </div> <!--End of Column 1-->
+            <div class="col-lg-8">
+                    <p class="text-justify">Hi! My name is Imran Adib and currently I'm working as a information technology engineer with over 2 years experience working in multi-national corporation (MNC). I have a bachelor's in Computer Sciences and I am very passionate about IT in general. I would like my career to revolve around technology because I can foresee the way it lead to bring human life towards a better future. 
+                        I am very interested to try something new and challenging. I want to challenge myself to get out of the comfort zone. Even though I really enjoy what I am doing right now but I still feel like there is a room for improvement for me to grow and doing what I love to do. 
+                        Besides my passion towards my career, I also spent time travelling to a few countries to learnt and explore the majestic things that exist in this world. I have been to Singapore, Thailand, Indonesia and the far that I have went to was Korea. There were so many stuff that I never seen in my own country. The culture, people, environment and so many other eye opener for me. I'm hoping to visit more states in the future!
+                        Do you love to read? I am not a bookworm I would say but I do read. There is one book that I would really recommend you to buy. It is called "How to Stop Worrying and Start Living" written by Dale Carnegie. I genuinely like how the writer make me thinking that life is not just a life. It is more than that. It help me to find myself and make me remember that there is no one else on earth that same as me. We are different on our own ways. 
+                        I think that is all that I can say about me in short but if you want to stay connect with me or perhaps working together, feel free to contact me.
+                        <br><br>
+                        Regards,<br></p>
+                        <h4 class="my-fourth-font">Imran Adib</h4>
+            </div>
+        </div>
+    </div>
+    <!-- End of About Section-->
+
+    <!--Portfolio Section-->
+    <div class="container">
+      <div class="sector" id="PortfolioSection">
+         <div class="my-third-font" style="text-align: center; margin-bottom: 20px;">
+          Portfolio<br>
+         </div>
+        <!-- Start 3 columns portfolio -->
+        <div class="row">
+          <div class="col" id="port1"> 
+              <div class="box" onclick="openTab('b1');"><p class="myHide my-fifth-font">BFitt</p>
+                <div class="hide">Click Here</div>
+              </div>
+          </div>
+
+          <div class="col" id="port2">
+              <div class="box" onclick="openTab('b2');"><p class="myHide my-fifth-font">YCDI</p>
+                 <div class="hide">Click Here</div>
+              </div>
+          </div>
+
+          <div class="col" id="port3">
+              <div class="box" onclick="openTab('b3');"><p class="myHide my-fifth-font">SMsg</p>
+              <div class="hide">Click Here</div></div>
+          </div>
+        </div>
+        <!-- End 3 columns -->
+
+        <!-- Display -->
+        <div id="b1" class="containerTab" style="display:none;">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+           <div class="my-third-font">
+             B-Fitt<br>
+            </div>
+               <p>This project is build to calculate the Body Mass Index (BMI) of a person.
+                  User able to enter get their result instantly without need to click a submit button. I'm using Vue JS as the framework. 
+                  Some simple CSS and HTML5.
+               </p><br>
+              <img src="img/bfitt.png" alt="bfitt" style="width: 70%; height: 60%; border-radius: 25px; display: block; margin-left: auto; margin-right: auto;"/>
+              <br><p style="text-align: center;"><a href="bfitt.html" target="_blank">View Live Project</a></p>
+        </div>
+
+        <div id="b2" class="containerTab" style="display:none;">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+             <div class="my-third-font">
+                  You. Can. Do. It.<br>
+             </div>
+                <p>This project is build to keep track a person daily task or also known as to-do list.
+                  User able to add their their own list, mark it as done, and delete it if the task is not needed anymore. In addtion to that,
+                  user able to sort down the list only by selecting the toggle button. I'm using Vue JS as the framework. 
+                  Some simple CSS and HTML/HTML5. 
+                </p>
+                <img src="img/ycdi.png" alt="ycdi" style="width: 70%; height: 60%; border-radius: 25px; display: block; margin-left: auto; margin-right: auto;"/>
+                <br><p style="text-align: center;"><a href="ycdi.html" target="_blank">View Live Project</a></p>
+        </div>
+        
+        <div id="b3" class="containerTab" style="display:none;">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <br><br>
+          <!--Slider-->
+          <div id="slider" class="carousel slide" data-ride="carousel"> <!--End Half-Slider-->
+            <div class="my-third-font">
+              System Message<br>
+            </div>
+       
+        <!--Slider-->
+        <div id="slider" class="carousel slide" data-ride="carousel"> <!--End Half-Slider-->
+            <p>This project is a bit complex than others. I have build this a part of improvement topic for the company that I work at the moment. Hence, I can't
+              show the live project. Only picture will be show for this project. It is a complete website where a front-end and back-end is created from scratch. 
+              For front-end I'm using HTML, CSS, and also Jquery as the javascript framework. Meanwhile for back-end, I'm using PHP and MSYQL as the server script language 
+              and database. I'm using Data Manipulation Language (DML) to retrieve, insert, delete and update the data. A login/logout page also has been created using the session method. 
+            </p><br>
+  
+          <!--Cont Half-Slider-->
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+          </ul>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/sysmsg1.png" alt="sysmsg1" width="1100" height="500"/>
+            </div>
+            <div class="carousel-item">
+              <img src="img/sysmsg2.png" alt="sysmsg2" width="1100" height="500"/>
+            </div>
+            <div class="carousel-item">
+              <img src="img/sysmsg3.png" alt="sysmsg3" width="1100" height="500"/>
+            </div>
+          </div>
+          
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#slider" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#slider" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+          <!--End of Slider-->
+        </div>
+        <!-- End Display -->
+
+      </div>
+    </div>
+    <!--End of Portfolio Section-->
+
+    <!-- Skill Section -->
+    <div class="container">
+    <div class="sector" id="SkillSection">
+        <div class="row">
+            <div class="col-lg-12 text-center"> 
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header bg-dark text-white text-center">IT Engineer (SAP Basis)</div>
+                    <div class="card-body">
+                    <p class="card-text text-justify">SAP Basis Administrator is responsible for the management of the SAP environment. It include configuring, monitoring, tuning, and troubleshooting the SAP technical environment as well as scheduling and executing the SAP transport system.</p>
+                    <hr>
+                    <p class="card-text text-center font-weight-bold">Achievements & Involvements</p>
+
+                          <ul class="text-left">
+                            <li>Solution Manager Admin</li>
+                            <li>SAP PI Admin</li>
+                            <li>SAP SLT Admin</li>
+                            <li>SAP BW Admin</li>
+                            <li>Technichal Support for Montly/Weekly Maintainance</li>
+                            <li>Technichal Support for Migration Project</li>
+                            <li>Project Coordinator </li>
+                          </ul>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-dark text-white text-center">Web Developer</div>
+                    <div class="card-body">
+                    <p class="card-text text-justify">My main area of expertise is more on Front End Development. I develop a website using HTML, CSS , and Javascript. I build fast and interactive websites.</p>
+                    <hr>
+                    <p class="card-text text-center font-weight-bold">Front End Skills</p>
+
+                    <ul class="text-left">
+                      <li>HTML &#38; HTML5</li>
+                      <li>CSS</li>
+                      <dd>-Framework: Bootstrap</dd>
+                      <li>Javascript</li>
+                      <dd>-Framework: Jquery</dd>
+                      <dd>-Framework: Vue.js</dd>
+                    </ul>
+
+                    <p class="card-text text-center font-weight-bold">Back End Skills</p>
+
+                    <ul class="text-left">
+                      <li>PHP</li>
+                      <li>MySQL</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-dark text-white text-center">Others</div>
+                    <div class="card-body">
+                      <p class="card-text text-justify">A team player with a can-do attitude, phenomenal time management skills, creative thinker that crave to explore a new and adventurous experiences.</p>
+                      <hr>
+                      <p class="card-text text-center font-weight-bold">General Skills</p>
+                    <ul class="text-left">
+                      <li>Creative</li>
+                      <li>Teamwork</li>
+                      <li>Strategic Planning</li>
+                      <li>Analytival Thinking</li>
+                      <li>Emphathy</li>
+                      <li>Strive for Excellent</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+        </div>
+        <div class="my-third-font" style="text-align: right; margin-top: 20px;">
+                
+          Achievement, Involvement, &#38; Skill
+         </div>
+    </div>
+     <!-- End of Skill Section-->
+
+    <!-- Contact Section-->
+    <div class="sector" id="ContactSection">
+        <div class="row">
+            <div class="col-lg-12 text-center"> 
+            <!--Section heading-->
+            <div class="my-third-font">
+              Contact Me<br>
+             </div>
+            <br>
+            <!--Section description-->
+            <p>Do you have any questions? Please do not hesitate to contact me directly.</p>
+            <br>
+
+            <form class="needs-validation"  action="send_message.php" method="POST" novalidate>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" name="first_name" placeholder="First name" value="" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" name="last_name" placeholder="Last name" value="" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">Email</label>
+                    <input type="email" class="form-control" id="validationCustom03" name="email" placeholder="E-mail" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid email. Eg: myname@gmail.com
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom04">State</label>
+                    <input type="text" class="form-control" id="validationCustom04" name="state" placeholder="State" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom05">Zip</label>
+                    <input type="number" class="form-control" id="validationCustom05" name="zip" placeholder="Zip" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationCustom06">Message</label>
+                    <textarea class="form-control" id="validationCustom06" name="message" placeholder="Your website looks so cool!" value="" required></textarea>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Please provide some message.
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-secondary" name="submit" type="submit">Submit</button>
+              </form>
+              </div>
+        </div>
+    </div>
+  </div>
+ <!-- End of Contact Section-->
+
+ <!--Footer Section-->
+    <div class="footer">
+
+    <!--Scroll To Top Button-->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <!--Social Media Button-->
+        <a href="https://github.com/imranadibmn"><i id="social-git" class="fa fa-github fa-2x social"></i></a>
+        <a href="https://www.linkedin.com/in/imranadib/"><i id="social-li" class="fa fa-linkedin-square fa-2x social"></i></a>
+        <a href="mailto:imranadibnasri@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+    </div> 
+  <!--End Footer Section-->
+
+    <!-- Optional JavaScript -->
+    <script  src="script.js"></script> <!--Typing Colour Home Description JS-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!--Toggle Script-->
+    <script>
+         $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            })
+    </script>
+
+    <!-- Smooth Scrolling Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+        });
+    </script>
+    <!-- End of Smooth Scrolling Script -->
+
+    <!-- Validation Script -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+    </script>
+    <!-- End of Validation Script -->
+
+    <!--Back to Top Button-->
+    <script>
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});   
+    </script>
+    <!--End of Back to Top Button-->
+
+    <!--Portfolio-->
+    <script>
+      function openTab(tabName) {
+        var i, x;
+        x = document.getElementsByClassName("containerTab");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+      }
+    </script>
+    <!--End of Portfolio-->
+
+  </body>
+</html>
